@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DEVGENIUS - Premium Developer Showcase & Digital Product Studio. Modern web applications, AI-powered systems, and high-performance digital experiences.">
+  <title>DEVGENIUS | Premium Developer Showcase</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+    <div class="bg-particles" id="particles-container"></div>
+  </div>
+
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-brand">
+        <img src="assets/images/logo/devgenius-logo.png" alt="DEVGENIUS Logo" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="brand-text">DEV<span class="highlight">GENIUS</span></span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#technologies" class="nav-link">Technologies</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-cta mobile-only-cta">Let's Work Together</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-glass btn-cta desktop-cta">
+          <span>Let's Work Together</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="badge fade-in">
+            <span class="badge-dot"></span>
+            <span class="badge-text">BUILDING DIGITAL EXPERIENCES</span>
+          </div>
+
+          <h1 class="hero-title fade-in">
+            WE BUILD <span class="gradient-text">DIGITAL EXPERIENCES.</span>
+          </h1>
+
+          <p class="hero-subtitle fade-in">
+            Modern websites, AI-powered experiences and powerful digital products crafted with clean code and thoughtful design.
+          </p>
+
+          <div class="hero-actions fade-in">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <span>Let's Talk</span>
+            </a>
+          </div>
+
+          <div class="availability-status fade-in">
+            <span class="status-indicator">
+              <span class="status-ping"></span>
+              <span class="status-dot"></span>
+            </span>
+            <span class="status-text">Available for new projects</span>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in" id="heroVisual">
+          <div class="scene-3d" id="scene3d">
+            
+            <div class="glass-card main-3d-card layer" data-depth="0.08">
+              <div class="card-header-bar">
+                <div class="window-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="window-title">devgenius.app</div>
+              </div>
+              <div class="code-editor-preview">
+                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">studio</span> = <span class="code-keyword">new</span> <span class="code-func">DevGenius</span>({</div>
+                <div class="code-line indent"><span class="code-prop">precision</span>: <span class="code-string">'100%'</span>,</div>
+                <div class="code-line indent"><span class="code-prop">architecture</span>: <span class="code-string">'Next-Gen'</span>,</div>
+                <div class="code-line indent"><span class="code-prop">aiDriven</span>: <span class="code-bool">true</span></div>
+                <div class="code-line">});</div>
+                <div class="code-line"><span class="code-var">studio</span>.<span class="code-func">launch</span>(); <span class="code-cursor"></span></div>
+              </div>
+            </div>
+
+            <div class="glass-card float-card-1 layer" data-depth="0.15">
+              <div class="icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38F29B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <div class="float-text">
+                <span class="float-title">Performance</span>
+                <span class="float-value">99.8% Optimized</span>
+              </div>
+            </div>
+
+            <div class="glass-card float-card-2 layer" data-depth="0.22">
+              <div class="tech-chip">
+                <span class="chip-dot"></span>
+                <span>AI Native</span>
+              </div>
+              <div class="code-mini-block">
+                <div class="mini-bar width-80"></div>
+                <div class="mini-bar width-50"></div>
+              </div>
+            </div>
+
+            <div class="orb-container layer" data-depth="0.30">
+              <div class="green-orb"></div>
+            </div>
+            
+            <div class="ring-3d layer" data-depth="0.05"></div>
+            
+            <div class="micro-icon icon-1 layer" data-depth="0.25">
+              <img src="assets/icons/react.svg" alt="React" onerror="this.style.display='none';">
+            </div>
+            <div class="micro-icon icon-2 layer" data-depth="0.18">
+              <img src="assets/icons/javascript.svg" alt="JS" onerror="this.style.display='none';">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid glass-panel">
+          
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="8" data-pad="2">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Technologies</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="3" data-pad="2">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Years Experience</span>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header center">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2 class="section-title">SELECTED PROJECTS</h2>
+          <p class="section-subtitle">A collection of digital products, experiments and client projects.</p>
+        </div>
+
+        <div class="slider-wrapper">
+          <button class="slider-arrow prev" id="sliderPrev" aria-label="Previous Project">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+
+          <div class="slider-container" id="projectSlider">
+            <div class="slider-track" id="sliderTrack">
+
+              <article class="project-card glass-panel" data-tilt>
+                <div class="card-inner">
+                  <div class="project-image-wrapper">
+                    <img src="assets/images/projects/project-01.webp" alt="AI Business Assistant" class="project-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80';">
+                    <div class="image-overlay"></div>
+                    <span class="project-badge">AI Platform</span>
+                  </div>
+                  
+                  <div class="project-content">
+                    <div class="project-header">
+                      <span class="project-num">01</span>
+                      <h3 class="project-title">AI Business Assistant</h3>
+                    </div>
+                    
+                    <p class="project-desc">An AI-powered business automation platform designed to manage customer conversations and orders.</p>
+                    
+                    <div class="project-tags">
+                      <span class="tag">AI</span>
+                      <span class="tag">PHP</span>
+                      <span class="tag">MySQL</span>
+                    </div>
+
+                    <div class="project-footer">
+                      <a href="#contact" class="btn btn-card">
+                        <span>Visit Project</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card glass-panel" data-tilt>
+                <div class="card-inner">
+                  <div class="project-image-wrapper">
+                    <img src="assets/images/projects/project-02.webp" alt="E-Commerce Ecosystem" class="project-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80';">
+                    <div class="image-overlay"></div>
+                    <span class="project-badge">E-Commerce</span>
+                  </div>
+                  
+                  <div class="project-content">
+                    <div class="project-header">
+                      <span class="project-num">02</span>
+                      <h3 class="project-title">E-Commerce Ecosystem</h3>
+                    </div>
+                    
+                    <p class="project-desc">A next-gen headless shopping experience built for lightning performance and seamless scale.</p>
+                    
+                    <div class="project-tags">
+                      <span class="tag">React</span>
+                      <span class="tag">Node.js</span>
+                      <span class="tag">Firebase</span>
+                    </div>
+
+                    <div class="project-footer">
+                      <a href="#contact" class="btn btn-card">
+                        <span>Visit Project</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card glass-panel" data-tilt>
+                <div class="card-inner">
+                  <div class="project-image-wrapper">
+                    <img src="assets/images/projects/project-03.webp" alt="Fintech Analytics Platform" class="project-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1000&q=80';">
+                    <div class="image-overlay"></div>
+                    <span class="project-badge">Fintech</span>
+                  </div>
+                  
+                  <div class="project-content">
+                    <div class="project-header">
+                      <span class="project-num">03</span>
+                      <h3 class="project-title">Fintech Analytics Platform</h3>
+                    </div>
+                    
+                    <p class="project-desc">Real-time financial analytics dashboard with predictive metrics and intelligent portfolio insights.</p>
+                    
+                    <div class="project-tags">
+                      <span class="tag">JavaScript</span>
+                      <span class="tag">CSS3</span>
+                      <span class="tag">HTML5</span>
+                    </div>
+
+                    <div class="project-footer">
+                      <a href="#contact" class="btn btn-card">
+                        <span>Visit Project</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <button class="slider-arrow next" id="sliderNext" aria-label="Next Project">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="slider-dots" id="sliderDots"></div>
+
+      </div>
+    </section>
+
+    <section class="tech-section" id="technologies">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">STACK & TOOLS</span>
+          <h2 class="section-title">TECHNOLOGIES I WORK WITH</h2>
+          <p class="section-subtitle">Tools and technologies behind the projects.</p>
+        </div>
+      </div>
+
+      <div class="marquee-wrapper">
+        <div class="marquee-track" id="marqueeTrack">
+          
+          <div class="marquee-item">
+            <img src="assets/icons/html.svg" alt="HTML5" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'">
+            <span>HTML5</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/css.svg" alt="CSS3" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'">
+            <span>CSS3</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/javascript.svg" alt="JavaScript" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'">
+            <span>JavaScript</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/php.svg" alt="PHP" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'">
+            <span>PHP</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/mysql.svg" alt="MySQL" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'">
+            <span>MySQL</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/react.svg" alt="React" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'">
+            <span>React</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/node.svg" alt="Node.js" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'">
+            <span>Node.js</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/firebase.svg" alt="Firebase" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg'">
+            <span>Firebase</span>
+          </div>
+          <div class="marquee-item">
+            <img src="assets/icons/github.svg" alt="GitHub" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'">
+            <span>GitHub</span>
+          </div>
+
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/html.svg" alt="HTML5" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'">
+            <span>HTML5</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/css.svg" alt="CSS3" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'">
+            <span>CSS3</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/javascript.svg" alt="JavaScript" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'">
+            <span>JavaScript</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/php.svg" alt="PHP" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'">
+            <span>PHP</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/mysql.svg" alt="MySQL" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'">
+            <span>MySQL</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/react.svg" alt="React" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'">
+            <span>React</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/node.svg" alt="Node.js" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'">
+            <span>Node.js</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/firebase.svg" alt="Firebase" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg'">
+            <span>Firebase</span>
+          </div>
+          <div class="marquee-item" aria-hidden="true">
+            <img src="assets/icons/github.svg" alt="GitHub" class="tech-icon" onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'">
+            <span>GitHub</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="container">
+        
+        <div class="section-header center">
+          <span class="section-tag">WHAT WE DO</span>
+          <h2 class="section-title">SERVICES</h2>
+          <p class="section-subtitle">Tailored digital engineering solutions built for growth.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card glass-panel" data-tilt>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="service-number">01</span>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-text">Fast, responsive and modern websites built with clean frontend and robust backend architecture.</p>
+          </div>
+
+          <div class="service-card glass-panel" data-tilt>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span class="service-number">02</span>
+            </div>
+            <h3 class="service-title">AI Integration</h3>
+            <p class="service-text">AI-powered automation, intelligent chat systems, and smart algorithmic digital experiences.</p>
+          </div>
+
+          <div class="service-card glass-panel" data-tilt>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              </div>
+              <span class="service-number">03</span>
+            </div>
+            <h3 class="service-title">Business Automation</h3>
+            <p class="service-text">Custom web platforms and tools that streamline, scale, and simplify repetitive business operations.</p>
+          </div>
+
+          <div class="service-card glass-panel" data-tilt>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+              </div>
+              <span class="service-number">04</span>
+            </div>
+            <h3 class="service-title">UI / UX Design</h3>
+            <p class="service-text">Clean, modern interfaces designed around micro-interactions, high usability, and conversion.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        
+        <div class="section-header center">
+          <span class="section-tag">WORKFLOW</span>
+          <h2 class="section-title">THE PROCESS</h2>
+          <p class="section-subtitle">How we transform vision into execution.</p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <div class="process-step glass-panel">
+            <div class="step-badge">01</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">Deep-dive analysis into target requirements, user flows, and core technology decisions.</p>
+          </div>
+
+          <div class="process-step glass-panel">
+            <div class="step-badge">02</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">Crafting responsive glassmorphic interfaces, interactive design systems, and rapid wireframes.</p>
+          </div>
+
+          <div class="process-step glass-panel">
+            <div class="step-badge">03</div>
+            <h3 class="step-title">Develop</h3>
+            <p class="step-desc">Writing clean, modular, hardware-accelerated frontend & backend code focused on speed.</p>
+          </div>
+
+          <div class="process-step glass-panel">
+            <div class="step-badge">04</div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">Rigorous multi-device testing, SEO optimization, performance auditing, and deployment.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-box glass-panel">
+          <div class="cta-glow" aria-hidden="true"></div>
+          
+          <div class="cta-content">
+            <h2 class="cta-title">Have a project in mind?</h2>
+            <p class="cta-text">Let's turn your idea into something people remember.</p>
+            
+            <div class="cta-buttons">
+              <a href="mailto:hello@devgenius.app" class="btn btn-primary">
+                <span>Start a Project</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+              <a href="#projects" class="btn btn-glass">
+                <span>View Projects</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <span class="brand-text">DEV<span class="highlight">GENIUS</span></span>
+          </a>
+          <p class="footer-tagline">Building modern digital experiences.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#technologies" class="footer-link">Technologies</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.762-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 DEVGENIUS. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
